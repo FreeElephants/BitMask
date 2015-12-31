@@ -1,0 +1,23 @@
+{
+    "name": "free-elephants/bitmask",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "samizdam",
+            "email": "samizdam@inbox.ru"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^5.1"
+    },
+    "autoload": {
+    	"psr-4": {
+    		"FreeElephants\\BitMask\\": "src/FreeElephants/BitMask"
+    	}
+    },
+    "autoload-dev": {
+    	"psr-4": {
+    		"FreeElephants\\BitMask\\": "tests/FreeElephants/BitMask"
+    	}
+    }
+}
