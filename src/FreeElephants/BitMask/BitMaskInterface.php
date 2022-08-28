@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace FreeElephants\BitMask;
 
@@ -9,20 +10,7 @@ namespace FreeElephants\BitMask;
  */
 interface BitMaskInterface
 {
+    public function hasFlag(int $flag): bool;
 
-    /**
-     *
-     *
-     * @param int $flag
-     * @return bool
-     */
-    public function hasFlag($flag);
-
-    /**
-     *
-     *
-     * @param int $flag
-     * @return void
-     */
-    public function setFlag($flag);
+    public function setFlag(int $flag): void;
 }

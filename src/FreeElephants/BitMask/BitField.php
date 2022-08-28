@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace FreeElephants\BitMask;
 
@@ -12,23 +13,12 @@ class BitField implements BitFieldContainerInterface
 {
     use BitFieldTrait;
 
-    /**
-     *
-     *
-     * @param int $value
-     */
-    public function __construct($value)
+    public function __construct(int $value)
     {
         $this->setBitFieldValue($value);
     }
 
-    /**
-     *
-     *
-     * @param BitField $other
-     * @return boolean
-     */
-    public function equals(BitField $other)
+    public function equals(BitField $other): bool
     {
         return $this->getBitFieldValue() === $other->getBitFieldValue();
     }

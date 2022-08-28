@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace FreeElephants\BitMask;
 
@@ -7,35 +8,15 @@ namespace FreeElephants\BitMask;
  */
 trait BitMaskTrait
 {
-
-    /**
-     * @param int $options
-     * @param int $flag
-     *
-     * @return bool
-     */
-    protected function isFlagSet($options, $flag)
+    protected function isFlagSet(int $options, int $flag): bool
     {
-        $options = abs( (int) $options);
-        $flag = abs( (int) $flag);
         return (($options & $flag) === $flag);
     }
 
-    /**
-     *
-     *
-     * @param int $flag
-     * @return bool
-     */
-    public function hasFlag($flag)
+    public function hasFlag(int $flag): bool
     {
         return $this->isFlagSet($this->getBitFieldValue(), $flag);
     }
 
-    /**
-     *
-     *
-     * @return int
-     */
-    abstract protected function getBitFieldValue();
+    abstract protected function getBitFieldValue(): int;
 }

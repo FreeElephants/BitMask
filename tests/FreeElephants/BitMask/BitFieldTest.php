@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace FreeElephants\BitMask;
 
@@ -7,7 +8,7 @@ namespace FreeElephants\BitMask;
  * @author samizdam
  *
  */
-class BitFieldTest extends \PHPUnit_Framework_TestCase
+class BitFieldTest extends AbstractTestCase
 {
 
     public function testEquals()

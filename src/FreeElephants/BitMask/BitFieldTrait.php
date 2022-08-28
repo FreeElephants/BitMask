@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace FreeElephants\BitMask;
 
@@ -10,25 +11,14 @@ namespace FreeElephants\BitMask;
 trait BitFieldTrait
 {
 
-    private $bitFieldValue = 0;
+    private int $bitFieldValue = 0;
 
-    /**
-     *
-     *
-     * @param int $value
-     * @return void
-     */
-    public function setBitFieldValue($value)
+    public function setBitFieldValue(int $value): void
     {
-        $this->bitFieldValue = abs( (int) $value);
+        $this->bitFieldValue = $value;
     }
 
-    /**
-     *
-     *
-     * @return int
-     */
-    public function getBitFieldValue()
+    public function getBitFieldValue(): int
     {
         return $this->bitFieldValue;
     }
