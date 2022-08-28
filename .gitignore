@@ -8,6 +8,7 @@
 .env
 
 # PHPUnit
+.phpunit.result.cache
 phpunit.xml
 tests/_coverage
 
