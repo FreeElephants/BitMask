@@ -10,20 +10,8 @@ namespace FreeElephants\BitMask;
  */
 interface BitFieldContainerInterface
 {
+    public function setBitFieldValue(int $value): void;
 
-    /**
-     *
-     *
-     * @param int $value
-     * @return void
-     */
-    public function setBitFieldValue($value);
-
-    /**
-     *
-     *
-     * @return int
-     */
-    public function getBitFieldValue();
+    public function getBitFieldValue(): int;
 
 }

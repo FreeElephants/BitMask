@@ -14,7 +14,7 @@ class Example
 
     use BitMaskTrait;
 
-    protected function getBitFieldValue()
+    protected function getBitFieldValue(): int
     {
         return 0b0010;
     }
