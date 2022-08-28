@@ -4,6 +4,11 @@
 	backupGlobals="false"
 	processIsolation="false"
 	>
+	<testsuites>
+		<testsuite name="unit">
+			<directory>tests</directory>
+		</testsuite>
+	</testsuites>
 	<filter>
 	  <whitelist processUncoveredFilesFromWhitelist="true">
 	    <directory suffix=".php">src/</directory>
