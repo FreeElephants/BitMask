@@ -7,7 +7,7 @@ namespace FreeElephants\BitMask;
  * @author samizdam
  *
  */
-class BitFieldTest extends \PHPUnit_Framework_TestCase
+class BitFieldTest extends AbstractTestCase
 {
 
     public function testEquals()

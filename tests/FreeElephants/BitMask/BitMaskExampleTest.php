@@ -7,7 +7,7 @@ namespace FreeElephants\BitMask;
  * @author samizdam
  *
  */
-class BitMaskExampleTest extends \PHPUnit_Framework_TestCase
+class BitMaskExampleTest extends AbstractTestCase
 {
 
     public function testHasFlagFalse()
