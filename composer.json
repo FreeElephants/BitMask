@@ -1,5 +1,6 @@
 {
     "name": "free-elephants/bitmask",
+    "description": "Simple bitmask implementation - interfaces, VO, traits",
     "license": "BSD",
     "authors": [
         {
