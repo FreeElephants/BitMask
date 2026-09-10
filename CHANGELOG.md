@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## 1.0.0 - 2022-08-28
+## [Unreleased]
+### Changed
+- Development stuff
+
+## [1.0.0] - 2022-08-28
 ### Added
 - Dockerized php dev env
 
@@ -8,6 +12,6 @@
 - Update phpunit to last version
 - Typing signatures
 
-## 1.0.0-rc - 2015-12-31
+## [1.0.0-rc] - 2015-12-31
 ### Added
 - All classes. 
